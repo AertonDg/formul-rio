@@ -1,0 +1,62 @@
+section{
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 0, 0);
+    border-style: solid;
+}
+
+.formulario{
+    display: flex;
+    flex-direction:  column;
+    padding: 30px;
+    color: white;
+}
+
+input{
+    border-style: none;
+    outline-color: rgb(222, 135, 135);
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    margin: 5px 0;
+    --angle: 0deg;
+    border: 5px solid ;
+    border-image: conic-gradient(from var(--angle) , rgb(255, 93, 93) , rgb(255, 0, 0) , rgb(126, 2, 2),rgb(188, 11, 11)  ) 10;
+    animation: 6s rotate linear infinite;
+}
+
+button{
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: crimson;
+    color: rgb(255, 0, 0);
+    border-style: solid;
+    margin: 5px 0;
+    --angle: 0deg;
+    border: 5px solid ;
+    border-image: conic-gradient(from var(--angle) , rgb(255, 93, 93) , rgb(255, 0, 0) , rgb(126, 2, 2),rgb(188, 11, 11)  ) 10;
+    animation: 6s rotate linear infinite;
+}
+
+label{
+    color: black;
+}
+
+body{
+    background-color: rgb(68, 4, 4);
+}
+@keyframes rotate
+{
+    to
+    {
+        --angle: 360deg
+    }
+}
+@property --angle
+{
+
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
